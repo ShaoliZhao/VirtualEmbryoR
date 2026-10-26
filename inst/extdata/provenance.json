@@ -1,0 +1,42 @@
+{
+  "fetched": "2026-10-11",
+  "source": "https://virtualembryo.ai/challenge/panels/index.json",
+  "hash_note": "Official genes hash uses newline-joined names without a trailing newline; all prefixes verified. File-byte SHA256 stored separately.",
+  "panels": [
+    {
+      "board": "T1:val",
+      "genes": 32285,
+      "file_sha256": "2aeae4cd284933956242bbc9c5ab4f565c1d2acc7cc3fd3037977e4bce8be4bf",
+      "official_genes_hash": "807549e15be01989",
+      "source": "https://virtualembryo.ai/challenge/panels/T1__val.genes.txt"
+    },
+    {
+      "board": "T2:embryo:val_interp",
+      "genes": 498,
+      "file_sha256": "e20f726e623e04af289b434277187002150dbd5699a3ed09f5babfb633eddee7",
+      "official_genes_hash": "f8a2aaa79bf32cfb",
+      "source": "https://virtualembryo.ai/challenge/panels/T2__embryo__val_interp.genes.txt"
+    },
+    {
+      "board": "T2:heart:val_extrap",
+      "genes": 500,
+      "file_sha256": "bf40079bfb50c78d9360905156bd7fd8b39e711ad0cc44866e6dac3f7e9999fa",
+      "official_genes_hash": "a9a553108e19acb6",
+      "source": "https://virtualembryo.ai/challenge/panels/T2__heart__val_extrap.genes.txt"
+    },
+    {
+      "board": "T2:heart:val_interp",
+      "genes": 500,
+      "file_sha256": "bf40079bfb50c78d9360905156bd7fd8b39e711ad0cc44866e6dac3f7e9999fa",
+      "official_genes_hash": "a9a553108e19acb6",
+      "source": "https://virtualembryo.ai/challenge/panels/T2__heart__val_interp.genes.txt"
+    },
+    {
+      "board": "T3:gata4",
+      "genes": 500,
+      "file_sha256": "bf40079bfb50c78d9360905156bd7fd8b39e711ad0cc44866e6dac3f7e9999fa",
+      "official_genes_hash": "a9a553108e19acb6",
+      "source": "https://virtualembryo.ai/challenge/panels/T3__gata4.genes.txt"
+    }
+  ]
+}

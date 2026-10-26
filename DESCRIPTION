@@ -1,0 +1,13 @@
+Package: EmbryoR
+Type: Package
+Title: R Workflows for Embryo Prediction Submissions
+Version: 0.1.0
+Authors@R: person("Embryo", "Contributors", role = c("aut", "cre"), email = "maintainer@example.org")
+Description: Reads and writes AnnData files, validates configurable submission
+    contracts and provides transparent temporal baselines and diagnostics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: SingleCellExperiment, SummarizedExperiment, ggplot2, jsonlite, rlang, methods
+Suggests: zellkonverter, reticulate, S4Vectors, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr

@@ -1,0 +1,21 @@
+---
+title: "EmbryoR task1 walkthrough"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{EmbryoR task1_walkthrough}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(EmbryoR)
+library(SingleCellExperiment)
+x <- matrix(seq_len(60),5,dimnames=list(paste0("g",1:5),paste0("c",1:12)))
+a <- SingleCellExperiment(assays=list(X=x))
+b <- a;SummarizedExperiment::assay(b,"X") <- x+1
+pred <- pseudobulk_shift(a,b,c(8.5,9.5),10.5)
+validate_contract(pred,rownames(a))
+plot_gene(pred,"g1")
+```
+
+This is synthetic demonstration data. For real T1: read E8.5/E9.5, intersect and order both files using the **board panel**, check the released log-normalised scale, then extrapolate to E10.5. Use actual board limits (1000–5118 cells in the 2026-10-11 snapshot) and resample if needed. Check gene order and run `write_submission`; h5ad I/O requires zellkonverter. A pseudobulk shift cannot create missing descendant populations. Never train on excluded held-out-stage measurements.
